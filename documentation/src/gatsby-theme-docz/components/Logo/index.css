@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+.text-logo {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  position: absolute;
+  padding: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--theme-ui-colors-text);
+}
+
+.image-logo {
+  width: 55px;
+}
+
+.page-logo {
+  cursor: pointer;
+}
+
+.logout-button-header {
+  padding: 12px;
+  color: var(--colorpage-white);
+}
+
+button[aria-label*=Administrar] svg path {
+  stroke: currentColor;
+}
+
+.to-top {
+  background: var(--colorpage-primary);
+  position: fixed;
+  bottom: 16px;
+  right: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 45px;
+  color: var(--colorpage-white);
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s;
+}
+
+.to-top.active-to-top {
+  bottom: 32px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.dinamic-logo {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+.typed-out {
+  overflow: hidden;
+  margin-bottom: -8px;
+  white-space: nowrap;
+  border-right: 0.15em solid var(--colorpage-primary);
+  animation: typing 5s steps(12, end) forwards;
+  width: 0;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+
+  10% {
+    width: 0;
+  }
+
+  30% {
+    width: 100%;
+    border-right-style: solid;
+  }
+
+  39% {
+    width: 100%;
+    border-right-style: solid;
+  }
+
+  40% {
+    width: 100%;
+    border-right-style: none;
+  }
+
+  49% {
+    width: 100%;
+    border-right-style: none;
+  }
+
+  50% {
+    width: 100%;
+    border-right-style: solid;
+  }
+
+  59% {
+    width: 100%;
+    border-right-style: solid;
+  }
+
+  60% {
+    width: 100%;
+    border-right-style: none;
+  }
+
+  69% {
+    width: 100%;
+    border-right-style: none;
+  }
+
+  70% {
+    width: 100%;
+    border-right-style: solid;
+  }
+
+  79% {
+    width: 100%;
+    border-right-style: solid;
+  }
+
+  80% {
+    width: 100%;
+    border-right-style: none;
+  }
+
+  89% {
+    width: 100%;
+    border-right-style: none;
+  }
+
+  90% {
+    width: 100%;
+    border-right-style: solid;
+  }
+
+  99% {
+    width: 100%;
+    border-right-style: solid;
+  }
+
+  100% {
+    width: 100%;
+    border-right-style: none;
+  }
+}

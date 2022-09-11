@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+
+.screen-header {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    height: 10vh;
+    min-width: max-content;
+    background-color: var(--colorpage-white);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.screen-header-icon-container {
+    border-radius: 1vh;
+    width: 7vh;
+    height: 7vh;
+    margin-left: 20px;
+    background-color: var(--colorpage-white);
+    box-shadow: var(--colorpage-background-admin) 0px 0.6vh 0.6vh 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.screen-header-icon-container svg {
+    font-size: 3vh;
+    color: #000;
+}
+
+.screen-header-descriptions {
+    font-size: 1.7vh;
+    margin-left: 3vh;
+}
+
+.screen-header-title {
+    font-size: 2vh;
+    font-weight: 600;
+    margin-bottom: -15px;
+}
+
+.screen-content {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--colorpage-white);
+    border-radius: 8px;
+    box-shadow: var(--colorpage-primary-transparent) 0px 3px 3px 0px;
+    padding: 1.5rem;
+}
+
+.screen-content h3 {
+    display: contents;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.screen-content [aria-label="add"] {
+    float: right;
+}
+
+.user-logued-header {
+    position: absolute;
+    display: flex;
+    right: 2vh;
+    top: 2vh;
+}
+
+.user-logued-header p {
+    padding-right: 20px;
+}
+
+.user-logued-header div {
+    margin-top: 7px;
+}

@@ -1,0 +1,32 @@
+{
+  "name": "gatsby-docz-login",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "riglesias",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/riglesias1/gatsby-docz-login"
+  },
+  "scripts": {
+    "telemetry": "gatsby telemetry --disable",
+    "build": "docz build",
+    "dev": "docz dev --host 0.0.0.0 --port 3000",
+    "serve": "docz serve --host 0.0.0.0 --port 3000"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.5",
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@mui/material": "^5.8.4",
+    "@react-oauth/google": "^0.2.6",
+    "axios": "^0.25.0",
+    "docz": "^2.4.0",
+    "gapi-script": "^1.2.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-icons": "^4.3.1",
+    "react-router-dom": "^6.3.0",
+    "typescript": "^4.6"
+  }
+}

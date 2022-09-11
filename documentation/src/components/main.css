@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+:root {
+    --colorpage-primary: #3EC5BC;
+    --colorpage-secondary: #20A9A3;
+    --colorpage-background-admin: #93DACC;
+    --colorpage-primary-transparent: #3EC5BC54; /* colorpage-primary + '54' */
+    --colorpage-white: #FFF;
+    --colorpage-gray: #878787;
+    --colorpage-gray-transparent: #8787871A;
+    overflow: overlay;
+    /* --theme-ui-colors-text: -;
+  --theme-ui-colors-background: -; */
+    /* scroll-behavior: smooth; */
+}
+
+::selection {
+    background: var(--colorpage-primary);
+    color: var(--colorpage-white);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--colorpage-white);
+}
+
+/* Colors of the sidebar */
+[data-testid*="sidebar"] {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    overflow-x: hidden !important;
+}
+
+[data-testid*="sidebar"],
+[data-testid*="sidebar"] {
+    font-size: 13px !important;
+}
+
+[data-testid*="nav-group"] {
+    font-size: 13px !important;
+    font-weight: 500;
+}
+
+.css-1ooej63,
+.css-f1s7nf {
+    font-size: 12px !important;
+}
+
+[aria-current]:not(.text-logo) {
+    color: var(--colorpage-primary) !important;
+}
+
+[data-testid*=sidebar] a {
+    font-size: 14px;
+}
+
+[data-testid*=sidebar] .active::before {
+    background-color: var(--colorpage-primary) !important;
+}
+
+/* Logo of theme and git repo */
+[data-testid*="header"] div div div a,
+[data-testid*="header"] div div button {
+    background-color: var(--colorpage-primary) !important;
+}
+
+[data-testid*="header"] {
+    border: 0px !important;
+}
+
+/* Fix issue of titles doesnt change with theme */
+/* .css-1x8iw5e-Component {
+  color: var(--theme-ui-colors-text) !important;
+} */
+
+/* ScrollBar */
+*::-webkit-scrollbar {
+    background-color: transparent;
+    max-width: 6px;
+    height: 6px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #babac0;
+    border-radius: 16px;
+}
+
+*::-webkit-scrollbar-corner {
+    border-radius: 10px;
+    background-color: #babac0;
+}
+
+/* Titles of themes with ## */
+[data-testid*="main-container"] h2 {
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: 200 !important;
+    border-bottom: thick solid var(--colorpage-primary);
+    border-width: 3px;
+    width: 65px;
+    transition: ease-in-out 0.25s;
+}
+
+[data-testid*="main-container"] h2 a {
+    text-decoration: none !important;
+    white-space: nowrap;
+    height: 50px;
+}
+
+[data-testid*="main-container"] h2:hover {
+    color: var(--colorpage-primary);
+    text-shadow: 0px 0px 30px var(--colorpage-primary-transparent);
+    font-weight: 300 !important;
+}
+
+
+@media (max-width: 550px) {
+
+    [data-testid*="main-container"] h2 a {
+        font-size: 22px;
+    }
+}

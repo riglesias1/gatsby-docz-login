@@ -1,0 +1,35 @@
+td[name="actions"] {
+    padding: 0px;
+}
+
+.info-users {
+    margin: 15px 0px 0px 15px;
+}
+
+/* Border Color */
+.MuiButton-contained {
+    background-color: var(--colorpage-primary) !important;
+}
+
+.MuiButton-contained:hover {
+    background-color: var(--colorpage-secondary) !important;
+}
+
+.Mui-selected {
+    background-color: var(--colorpage-primary-transparent) !important;
+}
+
+.MuiButton-outlined {
+    color: var(--colorpage-primary) !important;
+    border: 1px solid var(--colorpage-primary-transparent) !important;
+}
+
+.MuiFormLabel-root.Mui-focused,
+.MuiButton-textPrimary,
+.Mui-checked {
+    color: var(--colorpage-primary) !important;
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: var(--colorpage-primary) !important;
+}
