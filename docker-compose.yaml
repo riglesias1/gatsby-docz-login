@@ -1,0 +1,52 @@
+version: '3.7'
+services:
+  documentation:
+    build:
+      context: ./
+      dockerfile: ./documentation/Dockerfile
+    restart: unless-stopped
+    env_file: ./.env
+    environment:
+      - TZ=America/Argentina/Buenos_Aires
+    volumes:
+      - ./documentation/src:/app/src
+      - ./documentation/package.json:/app/package.json
+      - /etc/localtime:/etc/localtime
+    ports:
+      - 3000:3000
+    networks:
+      - gatsby-network
+
+  whitelist-api:
+    build:
+      context: ./
+      dockerfile: ./whitelist-api/Dockerfile
+    restart: unless-stopped
+    env_file: ./.env
+    environment:
+      - TZ=America/Argentina/Buenos_Aires
+    volumes:
+      - ./whitelist-api:/home/app
+      - /etc/localtime:/etc/localtime
+    ports:
+      - ${API_PORT}:${API_PORT}
+    networks:
+      - gatsby-network
+  
+  mongo:
+    image: mongo:4.2.3
+    restart: always
+    environment:
+      - TZ=America/Argentina/Buenos_Aires
+    volumes:
+      - ./mongodata:/data/db
+      - /etc/localtime:/etc/localtime
+    networks:
+      - gatsby-network
+    ports:
+      - 27017:27017
+
+networks:
+  gatsby-network:
+    ipam:
+      driver: default
